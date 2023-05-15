@@ -1,0 +1,77 @@
+﻿<html>
+ <head>
+  <meta name="viewport" content= "width=device-width, user-scalable=no">
+  <meta charset="utf-8"/>
+  <title>GALILEU CURSOS</title>
+  <style>
+   *{margin:0px;padding:0px;cursor:none;}
+   html{scroll-behavior:smooth;}   
+   body{overflow-y:hidden;overflow-x:hidden;background-image:url("imagens/fundo.jpg");background-repeat:no-repeat; background-attachment:fixed;background-size:cover;}
+  
+   #inicio{width:100%;height:100%;position:relative;}
+   #circle{width:100%;position:absolute;bottom:0px;}
+   #logo{width:30%; position:absolute;bottom:2%;left:40px;}
+   #entrar{text-decoration:none;color:white;background:none;border:none;font-family:arial;position:absolute;bottom:20%;right:16%;font-size:40pt;opacity:0.5;}
+   #entrar:hover{opacity:1;}
+   #voltar:hover{opacity:0.5;}
+
+   #cursos{width:100%;height:100%;position:relative;background:#145373;}
+   #voltar{z-index:1;color:white;text-decoration:none;background:none;border:none;font-family:arial;position:absolute;left:5%;top:3%;font-size:148%;}
+   #container_cursos{border:3px solid white;scroll-behavior:smooth;border-radius:20px;overflow-y:hidden;position:absolute;width:55%;height:60%;background:red;top:50%;right:5%;transform:translate(0%,-50%);}
+   #container_login{position:absolute;width:32%;height:60%;border-radius:20px;background:white;top:50%;left:5%;transform:translate(0%,-50%);}
+   .cursosbtn{width:100%;height:100%;}
+   .btn_cursos{display:none;width:100%;height:10%;border-radius:10px;margin-bottom:2%;background:none;border:3px solid white;}
+   .a{font-size:150%;color:white;text-decoration:none;background:none;height:100%;font-weight:bold;}
+   .a:focus{color:gray;}
+    
+   span{color:black;position:relative;top:10%;left:3%;font-family:arial;font-weight:bold;}
+   input{text-transform:uppercase;width:90%;height:15%;position:relative;top:10%;left:3.5%;padding-left:3%;margin-bottom:3%;font-size:20pt;border-radius:20px;}
+   #login{width:40%;height:10%;position:absolute;bottom:20%;left:50%;transform:translate(-50%,0%);border-radius:20px;border:none;background:#145373;color:white;font-weight:bold;}
+   #login:hover{opacity:0.5;}
+   #cursor{display:block;z-index:1;width:20px;height:20px;background:none;position:absolute;}
+  </style>
+ </head>
+ <body>
+  <img src="tela inicio/cursor.png" id="cursor"/>
+  
+  <div id="inicio">
+   <img src="tela inicio/fundoCirculo.png" id="circle" />
+   <img src="tela inicio/logo.png" id="logo"/>
+   <a href="#cursos" id="entrar">COMEÇAR</a>
+  </div>
+
+  <div id="cursos">
+   <a href="#inicio" id="voltar">VOLTAR</a>
+   <div id="container_cursos">
+   <a href="#infoA"><img src="tela inicio/infobasic.png" class="cursosbtn"id="infoB"/></a>
+   <a href="#desnG"><img src="tela inicio/infoavan.png" class="cursosbtn" id="infoA"/></a>
+    <a href="#cgame2d"><img src="tela inicio/desingrafic.png" class="cursosbtn" id="desnG"/></a>
+    <a href="#opcaixa"><img src="tela inicio/gamecreator.png" class="cursosbtn"id="cgame2d"/></a>
+    <a href="#auxadm"><img src="tela inicio/opercaixa.png" class="cursosbtn" id="opcaixa"></a>
+    <a href="#infoB"><img src="tela inicio/auxadm.png" class="cursosbtn" id="auxadm"/></a>
+   </div>
+   <div id="container_login">
+    <span>USUÁRIO</span>
+    <input>
+     <span>SENHA</span>
+    <input type="password">
+    <button id="login" onclick="entrar()">ENTRAR</button>
+   </div>
+  </div>
+  <script>
+    function entrar(){window.location.replace("tela aluno.html")}
+   //pegar elementeo image
+    var cursor=document.getElementById("cursor");
+   
+   //capturrposiçao cursor
+    document.addEventListener("mousemove", function(e){
+    var x=e.pageX+5;
+    var y=e.pageY+1;
+   //fazer a imagem segui o cursor
+    cursor.style.left=x+"px";
+    cursor.style.top=y+"px";
+    })
+   
+  </script>
+ </body>
+</html>

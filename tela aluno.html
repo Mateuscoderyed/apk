@@ -1,0 +1,61 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>GALILEU CURSOS</title>
+  <style>
+  
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+
+  border-radius: 20px;
+  border: 2px solid white;
+  background-image:url("imagens/fundo.jpg");background-repeat:no-repeat; background-attachment:fixed;background-size:cover;}
+ 
+   body{background-image:url("imagens/fundo.jpg");background-repeat:no-repeat; background-attachment:fixed;background-size:cover;}
+   #barra1{width:100%;height:40px;position:relative;background:#145373;;border-radius:10px;}
+   #saudaçao{color:white;font-family:arial;font-size:17pt;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+   #cursostxt{text-align:center;color:#145373;;font-family:arial;font-size:20pt;position:relative;top:30px;padding-top:0px;width:100%;height:40px;background:none;display:block;border-bottom:7px dashed #145373;;}
+   #cont_cursos{display:flex;overflow-x:scroll;border-radius:10px;width:100%;height:350px;background:#145373; position:relative;top:34px;}
+   img{width:200px;height:200px;background:none;position:relative;top:80px;left:0px;padding-left:40px;padding-right:40px;transition:1s;}
+   img:hover{filter:hue-rotate(200deg);}
+
+   #modulostxt{text-align:center;color:#145373;;font-family:arial;font-size:20pt;position:relative;top:50px;padding-top:0px;width:100%;height:40px;background:none;display:block;border-bottom:7px dashed #145373;;}
+   #cont_modulos{border-radius:10px;width:100%;height:350px;background:#145373;; position:relative;top:54px;}
+	.cont{position:relative;width:100%;height:100vh;backgrond:red;}
+  </style>
+ </head>
+ <body>
+  <div id="barra1"><span id="saudaçao">OLÁ ALUNO, SEJA BEM VINDO</span></div>
+ <div class="cont">
+  <span id="cursostxt">CURSOS</span>
+  <div id="cont_cursos">
+   <img src="tela aluno/infob.png" onclick="ifb()">
+   <img src="tela aluno/infoa.png">
+   <img src="tela aluno/desingrafic.png"">
+   <img src="tela aluno/html5ic.png">
+   <img src="tela aluno/css.png">
+   <img src="tela aluno/jas.png">
+   <img src="tela aluno/creatgame2d.png">
+   <img src="tela aluno/opcaixa.png">
+   <img src="tela aluno/auxiadm.png">
+  </div>
+ </div>
+ <div class="cont">
+   <span id="modulostxt">STATUS</span>
+  <div id="cont_modulos"></div>
+ </div>
+ <script>
+  function ifb(){window.location.replace("tela informatica basica.html")}
+ </script>
+ </body>
+</html>

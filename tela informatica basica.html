@@ -1,0 +1,107 @@
+﻿<!DOCTYPE HTML>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>GALILEU CURSOS</title>
+  <style>
+  /* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+ 
+  border-radius: 20px;
+  border: 2px solid white;
+  background-image:url("imagens/fundo.jpg");background-repeat:no-repeat; background-attachment:fixed;background-size:cover;}
+  
+  body{background-image:url("imagens/fundo.jpg");background-repeat:no-repeat; background-attachment:fixed;background-size:cover;}
+  .cimg{width:70px; height:70px;background:#145373;margin-left:100px;border-radius:10px;}
+  div{width:100%;height:400px;background:#145373;margin-bottom:30px; border-radius:20px;display:flex;overflow-x:scroll;}
+  #nome_curso{width:100%;display:block;background:none;font-size:30pt;font-family:arial;color:#2e4979;font-weight:bold;text-align:center;border-bottom:3px dashed white;margin-bottom:20px;}
+  .nome_modulo{background:none;font-size:20pt;font-family:arial;color:#2e4979;font-weight:bold;position:relative;bottom:20px;}
+  .imgc{width:30%;position:relative;margin:30px; border:10px solid gray ;}
+  </style>
+ </head>
+ <body>
+  <span id="nome_curso">INFORMÁTICA BASICA</span>
+  <img class="cimg" src="https://static.wixstatic.com/media/0b76f2_e152ef9718d4494ca0370dbf3cc07a9c~mv2.jpg/v1/fill/w_480,h_472,al_c,lg_1,q_80,enc_auto/0b76f2_e152ef9718d4494ca0370dbf3cc07a9c~mv2.jpg">
+  
+  <span class="nome_modulo">INTRODUÇÃO</span>
+  <div>
+      <img class="imgc" src="aulasinfob/intro/aula1.png" style="border:10px solid #09ff00;" onclick="bbb()">
+	  <img class="imgc" src="aulasinfob/intro/aula2.png" >
+	  <img class="imgc" src="aulasinfob/intro/aula3.png" >
+	  <img class="imgc" src="aulasinfob/intro/aula4.png" >
+	  <img class="imgc" src="aulasinfob/intro/aula5.png" >
+	  <img class="imgc" src="aulasinfob/intro/aula6.png" >
+	  <img class="imgc" src="aulasinfob/intro/prova.png" >
+  </div>
+
+    <img class="cimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX///8Are8ArPITtfQAqe+o3/nE6vsAq+6+6Ps9v/cAq/L8//8ArfIAqe6/6fsAqfHy+/7T8PwwvPbm9v1Bw/nc8fzt+v4AsfNdxPW05Ppz0fuN1fi56P2N2v1pyPYku/ia3fx81Pyo5f6U3/9ZyvpUwfSf2vh91v2R1fif4f3O7Pt+2f44cbmaAAAD3UlEQVR4nO2d21biQBBFNYEgCZqQcBkuAo5RZ5z//7/p7gBelkrw6CId937yCWqvpKurEXLOzgAAAAAAAAAAAAAAAABqkUyi4tQ1fBNZMZwt5qPpIF6eupQvpxgur1d360EQdC57vfP44tQFfR3Z8GIz74fToNMzZr3ziqAFhkk2Xt7fjIxa6txe4rfhZBxtbsr8fOAu22s3rw2TcfT75q4fBkHwrpqnhkkRda/L0LRI10Zq4I2h6f7dxbxv1OLLZ32kDYZJ8bhcrEah7f6H7kjfDLPh7HbVX0/dYjtWrNGGSTZcmo1tOk3jzlE3ZPMNk8n4ajMv1+f1+4hHhsXf+Z3pI2a1yVetWYZJkVV/dNPLT7SRBhtmbtIq14P4amvY+Qa7kxjaU831qrQd0l21NGqNoR20/pX52i21p7XWAkPb++8fzOQ/SDtvTCMeGyZ2zvozN8NIpfZOF/HScGIH/19WzZ2yP+6QfhmaQ7bZ1db2TFN7w/bC0NyPkbkf7UHUHrKPK6Dhhu6MvbKjSPzBUvuQZhsmuVlq4ijScMO1PmY13DDXC8BQBkMMZTCUwRBDGQxlMMRQBkMZDDGUwVAGQwxlMJQRDdv/aSKGh8FQRjPsY3gYDGUwxFAuAEMZDDGUC8BQBkMM5QIwlMEQQ7kADGW075diWAMMZTDEUC4AQxnVUGZvmOqv9RbiczFGocx0ZzjVX+vtN7hSDAEAAA6SeLEfimd8mW+faVLlaWZefIoh    TW0Y1gFDGQwxlAvAUAZDDOUCMJThv2sYygVgKIMhhnIBGMpgiKFcAIYyGGIoF4ChDIYYygVgKIMhhnIBGMpgiKFcAIYyGGIoF4ChDIY/3PBH/GZGLgBDGQwxlAvAUEZ8qqCeNNlsw7PNauSyntzX/j9Hww1dXtfj7I+NRXVxhscX0HjDPS5zrR+Gx6b2+mO4ZTKO/u5y83p1om69M6xIJsVjdzG3izQ9kHvrqeHeNBvOXHZxHL8Xque54Y4qGDG32dqvg+haYrjFhlu6EPHBUztql2GFDSiduYDSwCzSNhruMffu/UO+//1hCw1fsMz3O0xLDW2wutlKy9zuMF8Z0d0cwy1mlV51F6VNEU7fCEhugeGeIupe/8ptfncgXdDmGlaYwf75BvOJSxr48WyT5wnYR65RTwy3VFNgbqbAzmXds5pfhjsmw4vbVT+fBjXiiP00rEiK8cVmbveX4IO267PhliQbm9moDN85qbXAcEcyjrr/7kIz7r5Yoy0y3JKZA4z7lCEI3CWNW2e4ZWImhoWNfdeeZtZ4kqSIilMXAQAAAAAAAAAAAAAAAI7/p/uh8cRzy9sAAAAASUVORK5CYII=">
+   <span class="nome_modulo">WINDOWS 10</span>
+   <div>
+      <img class="imgc" src="aulasinfob/windows/aula1.png" style="border:10px solid #09ff00;">
+	  <img class="imgc" src="aulasinfob/windows/aula2.png" >
+	  <img class="imgc" src="aulasinfob/windows/aula3.png" >
+	  <img class="imgc" src="aulasinfob/windows/aula4.png" >
+	  <img class="imgc" src="aulasinfob/windows/aula5.png" >
+	  <img class="imgc" src="aulasinfob/windows/aula6.png" >
+	  <img class="imgc" src="aulasinfob/windows/prova.png" >
+   </div>
+
+    <img class="cimg" src="https://icons.iconarchive.com/icons/carlosjj/microsoft-office-2013/256/Word-icon.png">
+    <span class="nome_modulo">MICROSOFT WORD</span>
+    <div>
+	<img class="imgc" src="aulasinfob/word/aula1.png" style="border:10px solid #09ff00;">
+	  <img class="imgc" src="aulasinfob/word/aula2.png" >
+	  <img class="imgc" src="aulasinfob/word/aula3.png" >
+	  <img class="imgc" src="aulasinfob/word/aula4.png" >
+	  <img class="imgc" src="aulasinfob/word/aula5.png" >
+	  <img class="imgc" src="aulasinfob/word/aula6.png" >
+	  <img class="imgc" src="aulasinfob/word/prova.png" >
+	</div>
+    
+	<img class="cimg" src="https://www.projetoeducare.com.br/metodo/imagemcursos/42.jpg">
+	<span class="nome_modulo">MICROSOFT EXCEL</span>
+    <div>
+	  <img class="imgc" src="aulasinfob/excel/aula2.png"  style="border:10px solid #09ff00;">
+	  <img class="imgc" src="aulasinfob/excel/aula3.png" >
+	  <img class="imgc" src="aulasinfob/excel/aula4.png" >
+	  <img class="imgc" src="aulasinfob/excel/aula5.png" >
+	  <img class="imgc" src="aulasinfob/excel/aula6.png" >
+	  <img class="imgc" src="aulasinfob/excel/prova.png" >
+	</div>
+
+    <img class="cimg" src="data:image/png;base64,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">
+   <span class="nome_modulo">MICROSOFT POWER POINT</span>
+   <div>
+      <img class="imgc" src="aulasinfob/p-point/aula1.png" style="border:10px solid #09ff00;">
+	  <img class="imgc" src="aulasinfob/p-point/aula2.png" >
+	  <img class="imgc" src="aulasinfob/p-point/aula3.png" >
+	  <img class="imgc" src="aulasinfob/p-point/aula4.png" >
+	  <img class="imgc" src="aulasinfob/p-point/aula5.png" >
+	  <img class="imgc" src="aulasinfob/p-point/aula6.png" >
+	  <img class="imgc" src="aulasinfob/p-point/prova.png" >
+   </div>
+
+  <img class="cimg" src="https://logosinternet.com.br/assets/img/icon-wifi.png">
+  <span class="nome_modulo">INTERNET</span>
+  <div>
+      <img class="imgc" src="aulasinfob/internet/aula1.png" style="border:10px solid #09ff00;">
+	  <img class="imgc" src="aulasinfob/internet/aula2.png" >
+	  <img class="imgc" src="aulasinfob/internet/aula3.png" >
+	  <img class="imgc" src="aulasinfob/internet/aula4.png" >
+	  <img class="imgc" src="aulasinfob/internet/aula5.png" >
+	  <img class="imgc" src="aulasinfob/internet/aula6.png" >
+	  <img class="imgc" src="aulasinfob/internet/prova.png" >
+  </div>
+  <script>
+   function bbb(){window.location.replace("tela aula.html")}
+  </script>
+ </body>
+</html>
